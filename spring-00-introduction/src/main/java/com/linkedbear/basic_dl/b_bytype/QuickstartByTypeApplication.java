@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class QuickstartByTypeApplication {
     public static void main(String[] args) throws Exception {
+        // 通过配置实现依赖查找
         BeanFactory factory = new ClassPathXmlApplicationContext("basic_dl/quickstart-bytype.xml");
         Person person= factory.getBean(Person.class);
         System.out.println(person);
