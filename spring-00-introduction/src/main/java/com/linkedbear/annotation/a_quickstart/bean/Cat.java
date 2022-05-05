@@ -1,8 +1,9 @@
 package com.linkedbear.annotation.a_quickstart.bean;
 
-public class Person {
+
+public class Cat {
     private String name;
-    private int age;
+    private Person master;
 
     public String getName() {
         return name;
@@ -12,19 +13,19 @@ public class Person {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public Person getMaster() {
+        return master;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setMaster(Person master) {
+        this.master = master;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Cat{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", master=" + master +
                 '}';
     }
 }
